@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thomas J Neff</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h1 class="mb-5">Pickle Calculator</h1>
+          <p>How many pickles are in the jar?</p>
+          <input
+            type="number"
+            id="picklecount"
+            name="picklecount"
+            min="0"
+            onchange="Calculate()"
+          />
+          <p id="demo"></p>
+          <br /><br />
+          <p>
+            We will assume there is 500ml of pickle juice and that it has the
+            same mass as water (1g/ml). <br /><br />
+            We will also assume each pickle weighs 100g.
+          </p>
+          <p>The total mass is...</p>
+          <p id="display"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="calculate.js"></script>
+  </body>
+</html>
