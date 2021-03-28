@@ -77,3 +77,16 @@ a.animated-button.victoria-one:after {
   transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   z-index: 0;
 }
+
+/* Modified Color Victoria Buttons */
+a.animated-button.victoria-one-dark {
+  border: 2px solid #ffffff;
+}
+a.animated-button.victoria-one-dark:after {
+  background: #ffffff4b;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  z-index: 0;
+}

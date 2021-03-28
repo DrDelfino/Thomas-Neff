@@ -36,6 +36,10 @@ h1 {
   z-index: 1;
 }
 
+.responsive-width-p9 {
+  font-size: 0.9vw;
+}
+
 .responsive-width-1 {
   font-size: 1vw;
 }
@@ -44,8 +48,8 @@ h1 {
   font-size: 2vw;
 }
 
-.responsive-width-8 {
-  font-size: 8vw;
+.responsive-width-8p3 {
+  font-size: 8.3vw;
 }
 
 .imgfill {
