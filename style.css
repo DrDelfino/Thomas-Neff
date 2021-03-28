@@ -37,8 +37,10 @@ h1 {
 }
 
 .imgfill {
+  object-fit: none; /* Do not scale the image */
+  object-position: top; /* Center the image within the element */
   width: 100%;
-  height: auto;
+  height: 100% !important;
 }
 
 .padding-0 {
