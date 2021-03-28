@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "webkit": "0.0.0"
   },
   "devDependencies": {},
   "scripts": {
