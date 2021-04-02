@@ -36,8 +36,8 @@
     $(".navbar-collapse").collapse("hide");
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#sideNav",
+  // Update hash in URL on nav bar click
+  jQuery("a").click(function (e) {
+    window.location.hash = this.hash;
   });
 })(jQuery); // End of use strict
