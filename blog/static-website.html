@@ -2,9 +2,146 @@
 <html lang="en">
   <head>
     <title>Developing and Deploying a Static Website with Netlify</title>
+
+    <!-- Blog Post CSS -->
+    <link href="../css/blog-posts.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome icons -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <h1>Developing and Deploying a Static Website with Netlify</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="pt-5 pb-3">
+            Developing and Deploying a Static Website with Netlify
+          </h1>
+          <h4 class="pb-3">Date XX/XX/XXXX</h4>
+          <h5 class="pb-3">
+            Technology Stack: HTML, CSS, JavaScript, Bootstrap, Netlify
+          </h5>
+
+          <p>
+            In this post, I'll show you how I developed and deployed this
+            website in three steps.
+          </p>
+
+          <ol>
+            <li>
+              Setting up - Visual Studio Code, GitHub, npm, Git, Bootstrap
+            </li>
+            <li>Developing - HTML, CSS, JavaScript, Bootstrap</li>
+            <li>Deploying - Netlify</li>
+          </ol>
+          <p>
+            Feel free to follow along and create your own website. It's fast,
+            easy, and free!
+          </p>
+
+          <!-- Setting Up -->
+          <h3 class="pt-3 pb-3">Setting up</h3>
+          <p>
+            If you're a seasoned developer, you can probably skip most of this
+            section. But if your new to development, let's get you set up.
+          </p>
+          <h5 class="pt-3">Download an IDE (Visual Studio Code)</h5>
+          <p>
+            First, you will want to open (or download) an Integrated Development
+            Environment (IDE). This is a fancy name for the software that will
+            let you edit your code. Many developers use Visual Studio Code, and
+            it's my tool of choice as well.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/" target="_blank"
+              >https://code.visualstudio.com/</a
+            >
+          </p>
+
+          <h5 class="pt-3">Install a package manager (npm)</h5>
+          <p>
+            Now it's time to install npm (originally Node Package Manager). In
+            an effort to keep things simple, let's just say we'll use npm to
+            download and install stuff.
+          </p>
+          <p>
+            <a href="https://www.npmjs.com/get-npm" target="_blank"
+              >https://www.npmjs.com/get-npm</a
+            >
+          </p>
+          <p>
+            If you want to understand npm a little better, check out this
+            <a
+              href="https://stackoverflow.com/questions/31930370/what-is-npm-and-why-do-i-need-it"
+              target="_blank"
+              >stack overflow post</a
+            >.
+          </p>
+          <h5 class="pt-3">Install a version control tool (Git)</h5>
+          <p>
+            Next, install Git. Git will help us with version control, making it
+            easy to push and pull changes from our command line.
+          </p>
+          <p>
+            <a href="https://git-scm.com/downloads" target="_blank"
+              >https://git-scm.com/downloads</a
+            >
+          </p>
+          <h5 class="pt-3">Create a code repository (GitHub)</h5>
+          <p>
+            Once you have everything installed, it's time to set up a code
+            repository. For this example, we'll be using GitHub. Navigate to
+            their website and set up an account, if you don't already have one.
+            Then, follow the on-screen instructions to create a new repository.
+          </p>
+          <p>
+            <a href="https://github.com/" target="_blank"
+              >https://github.com/</a
+            >
+          </p>
+          <p>
+            You can look at
+            <a
+              href="https://github.com/Thomas-Neff/Thomas-Neff-Personal-Website"
+              target="_blank"
+              >my repository</a
+            >
+            for this project as an example.
+          </p>
+          <h5 class="pt-3">Clone your repository</h5>
+          <p>
+            We want to make changes to the code in our repository (GitHub) using
+            our IDE (Visual Studio Code). To do that, we need to clone the
+            repository to our local machine.
+          </p>
+          <p>
+            Navigate to your repository in GitHub. Here is
+            <a
+              href="https://github.com/Thomas-Neff/Thomas-Neff-Personal-Website"
+              target="_blank"
+              >my repository </a
+            >again as an example. Click on the green button that says "Code". It
+            should look similar to this:
+          </p>
+          <button class="btn-github">
+            <i class="fas fa-download"></i> Code
+            <i class="fas fa-sort-down"></i>
+          </button>
+          <h5 class="pt-3">Install a responsive framework (Bootstrap)</h5>
+          <p>
+            Bootstrap is a front-end framework that helps to make your website
+            responsive, ensuring your site will look great on various screen
+            sizes. There are lots of ways to install Bootstrap, but let's take
+            advantage of our shiny new package manager, npm.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
