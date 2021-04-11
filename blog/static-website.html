@@ -3,7 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Developing and Deploying a Static Website with Netlify</title>
+    <title>
+      Developing and Deploying a Static Website with Bootstrap and Netlify
+    </title>
 
     <!-- Blog Post CSS -->
     <link href="../css/blog-posts.css" rel="stylesheet" />
@@ -23,7 +25,7 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <h1 class="pt-5 pb-3">
-            Developing and Deploying a Static Website with Netlify
+            Developing and Deploying a Static Website with Bootstrap and Netlify
           </h1>
           <h4 class="pb-3">Date XX/XX/XXXX</h4>
           <h5 class="pb-3">
@@ -44,11 +46,12 @@
           </ol>
           <p>
             Feel free to follow along and create your own website. It's fast,
-            easy, and free!
+            easy, and free! <br />Please note that these steps are written for
+            Windows users.
           </p>
 
           <!-- Setting Up -->
-          <h3 class="pt-3 pb-3">Setting up</h3>
+          <h3 class="pt-5 pb-3">Setting up</h3>
           <p>
             If you're a seasoned developer, you can probably skip most of this
             section. But if your new to development, let's get you set up.
@@ -118,9 +121,9 @@
           </p>
           <h5 class="pt-3">Clone your repository</h5>
           <p>
-            We want to make changes to the code in our repository (GitHub) using
-            our IDE (Visual Studio Code). To do that, we need to clone the
-            repository to our local machine.
+            We want to make changes to the code in our online code repository
+            (GitHub) using our local machine's IDE (Visual Studio Code). To do
+            that, we need to clone the repository to our local machine.
           </p>
           <p>
             Navigate to your repository in GitHub. Here is
@@ -129,18 +132,87 @@
               target="_blank"
               >my repository </a
             >again as an example. Click on the green button that says "Code". It
-            should look similar to this:
+            should look similar to the button below.
           </p>
-          <button class="btn-github">
+          <button class="btn-github btn-lg mx-auto d-block" href="#">
             <i class="fas fa-download"></i> Code
-            <i class="fas fa-sort-down"></i>
+            <i class="fas fa-sort-down pb-1"></i>
           </button>
+          <p class="pt-3">
+            Copy the HTTPS link that appears. It should look similar to the
+            screenshot below, but with your repository information.
+          </p>
+          <img
+            class="img-fluid w-50 pb-3 mx-auto d-block"
+            src="../assets/GitHub-clone.webp"
+          />
+          <p>
+            Open Visual Studio Code. You should be greeted with a welcome screen
+            that has a link to clone a repository.
+          </p>
+          <img
+            class="img-fluid w-50 pb-3 mx-auto d-block"
+            src="../assets/VSCode-welcome.webp"
+          />
+          <p>
+            Click on <i>clone repository...</i> and paste the link from GitHub.
+            You will be prompted to save the repository somewhere on your PC.
+          </p>
           <h5 class="pt-3">Install a responsive framework (Bootstrap)</h5>
           <p>
             Bootstrap is a front-end framework that helps to make your website
             responsive, ensuring your site will look great on various screen
             sizes. There are lots of ways to install Bootstrap, but let's take
             advantage of our shiny new package manager, npm.
+          </p>
+          <p>
+            Within Visual Studio Code, make sure you are in the folder where you
+            cloned your repository. Open the terminal using
+            <code> Ctrl+Shift+`</code>
+            or by clicking terminal > New Terminal in the top menu bar.
+          </p>
+          <p>
+            Within the terminal, verify npm installed correctly by writing the
+            command <code>npm -v</code>. You should get back a version number.
+          </p>
+          <p>
+            Now install Bootstrap using the command
+            <code>npm install bootstrap --save</code>.
+          </p>
+          <p>
+            For Bootstrap to work correctly, you will also need the JavaScript
+            library, jQuery. Install jQuery using the command
+            <code>npm install jquery --save</code>.
+          </p>
+          <h5 class="pt-3">Summary</h5>
+          <p>
+            Our development environment is now set up! Here's a quick summary of
+            everything we did:
+          </p>
+          <ul>
+            <li>Downloaded Visual Studio Code to edit our code</li>
+            <li>Installed npm to manage packages</li>
+            <li>Installed Git to help with version control</li>
+            <li>Created a code repository in GitHub</li>
+            <li>Cloned the code repository to our local machine</li>
+            <li>Installed Bootstrap to make our site responsive</li>
+          </ul>
+          <p>Now let's move on to the fun part: developing.</p>
+
+          <!-- Developing -->
+          <h3 class="pt-5 pb-3">Developing</h3>
+          <h5 class="pt-3">Create index.html</h5>
+          <p>
+            Within Visual Studio Code, make sure you are in the folder where you
+            cloned your repository. In the file explorer on the left-hand side,
+            click on the symbol:
+            <img
+              class="img"
+              style="height: 30px"
+              src="../assets/Add-file.png"
+            />
+            to add a file and name it <i>index.html</i>. This will be the
+            homepage for your website.
           </p>
         </div>
       </div>
