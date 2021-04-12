@@ -23,14 +23,15 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-8 offset-md-2 pb-3">
           <h1 class="pt-5 pb-3">
             Developing and Deploying a Static Website with Bootstrap and Netlify
           </h1>
-          <h4 class="pb-3">Date XX/XX/XXXX</h4>
-          <h5 class="pb-3">
+
+          <h4 class="pb-3">
             Technology Stack: HTML, CSS, JavaScript, Bootstrap, Netlify
-          </h5>
+          </h4>
+          <h4 class="pb-3">Date Pending</h4>
 
           <p>
             In this post, I'll show you how I developed and deployed this
@@ -53,7 +54,7 @@
           </p>
 
           <!-- Setting Up -->
-          <h3 class="pt-5 pb-3">Setting up</h3>
+          <h2 class="pt-5 pb-3">Setting up</h2>
           <p>
             If you're a seasoned developer, you can probably skip most of this
             section. But if your new to development, let's get you set up.
@@ -200,11 +201,13 @@
             <li>Cloned the code repository to our local machine</li>
             <li>Installed Bootstrap to make our site responsive</li>
           </ul>
-          <p>Now let's move on to the fun part: developing.</p>
 
           <!-- Developing -->
-          <h3 class="pt-5 pb-3">Developing</h3>
-          <h5 class="pt-3">Create index.html</h5>
+          <h2 class="pt-5 pb-3">Developing</h2>
+          <p>
+            We made it to the fun part! Time to start developing our website.
+          </p>
+          <h5 class="pt-3">Create a homepage</h5>
           <p>
             Within Visual Studio Code, make sure you are in the folder where you
             cloned your repository. In the file explorer on the left-hand side,
@@ -214,16 +217,152 @@
               style="height: 30px"
               src="../assets/Add-file.png"
             />
-            to add a file and name it <i>index.html</i>. This will be the
-            homepage for your website. Next, copy and paste the following code
-            into your index.html.
+            to add a file and name it index.html. This will be the homepage for
+            your website. Copy and paste the following code into your index.html
+            and hit save.
           </p>
           <p style="color: red; font-weight: bold; font-style: italic">
             Author's note - need to fix css and js references to hit the correct
             files in the node_modules folder, as well as to not show entire
-            filepath.
+            filepath. Also, add in a container, a row, and maybe a paragraph.
           </p>
           <script src="https://gist.github.com/Thomas-Neff/26e2628115f648c1efaf2d634be79819.js"></script>
+          <h5 class="pt-3">Render and view your homepage</h5>
+          <p>
+            In order to view your code in a browser, we will add an extension
+            called Live Server. Click on the symbol:
+            <img
+              class="img"
+              style="height: 30px"
+              src="../assets/Extensions.png"
+            />
+            on the left-hand menu bar in Visual Studio Code to view extensions.
+            Search for Live Server and click install. After it's done
+            installing, restart Visual Studio Code.
+          </p>
+          <p>
+            Open index.html within Visual Studio Code, and click on the button:
+            <img class="img" style="height: 18px" src="../assets/Go-Live.png" />
+            in the bottom right-hand tool bar. Your browser will open and you
+            should see a rendering of your local code.
+          </p>
+          <p style="color: red; font-weight: bold; font-style: italic">
+            Author's note - need to come back and fix the following preview
+            after I fix the code snippet above.
+          </p>
+          <img
+            class="img-fluid w-50 pb-3 mx-auto d-block"
+            src="../assets/first-bootstrap-website.webp"
+          />
+          <h5 class="pt-3">Understand the Bootstrap grid</h5>
+          <p>TBD</p>
+          <h5 class="pt-3">Add in styling with CSS</h5>
+          <p>TBD</p>
+          <h5 class="pt-3">Push your code to GitHub</h5>
+          <p>TBD</p>
+          <p>
+            Note on branches - if you are working with other developers, or on
+            anything with a lot of users, you should
+            <a
+              href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+              target="_blank"
+              >learn about branches</a
+            >. It is not a best practice to work out of the master branch (which
+            is where we're working); however - it's your site, and you can do
+            what you want. I work out of the main branch on my own website,
+            because I'm the only one here and I am living on the edge.
+          </p>
+          <h5 class="pt-3">Build your dream site</h5>
+          <p>
+            You have everything you need to build a beautiful, responsive site.
+            If this is your first time working with Bootstrap, I recommend
+            creating your site from scratch until you understand the framework.
+            Once you have the basics, you can start customizing templates that
+            other developers have created and shared.
+          </p>
+
+          <h5 class="pt-3">Downloading the template for thomasneff.com</h5>
+          <p>
+            <i
+              >I am now going to deviate from the straight-forward instructional
+              nature of this post to show you how I built my personal website.
+              You're welcome to continue following along, but I recommend
+              writing about yourself instead of using my information.
+              <i class="fas fa-smile-wink"></i
+            ></i>
+          </p>
+          <p>TBD</p>
+          <h5 class="pt-3">
+            Customizing the content for thomasneff.com (HTML)
+          </h5>
+          <p>TBD</p>
+          <h5 class="pt-3">Customizing the styling for thomasneff.com (CSS)</h5>
+          <p>TBD</p>
+          <h5 class="pt-3">
+            Customizing the scripting for thomasneff.com (JavaScript)
+          </h5>
+          <p>TBD</p>
+          <h5 class="pt-3">
+            Adding in the portfolio / blog for thomasneff.com
+          </h5>
+          <p>
+            Is this a portfolio or a blog? Even I don't know. To be honest, I
+            didn't really want to have a blog. So I'm calling it a portfolio.
+          </p>
+          <h5 class="pt-3">Summary</h5>
+          <p>TBD</p>
+
+          <!-- Deploying -->
+          <h2 class="pt-5 pb-3">Deploying</h2>
+          <p>
+            It's time to make our website available to the masses. There are
+            lots of ways to deploy a static website, but I'm going to recommend
+            one that my friend Matt Rodgers from
+            <a href="https://matthewdavidrodgers.com/" target="_blank"
+              >matthewdavidrodgers.com</a
+            >
+            turned me on to: Netlify.
+          </p>
+          <h5 class="pt-3">Deploying with Netlify - an anecdote</h5>
+          <p>
+            Netlify is so easy that when I had a time sensitive emergency to
+            deploy a JavaScript pickle calculator (I wish I could tell you more
+            about that, but this is a portfolio - not a blog - remember?) I
+            turned to Netlify. Even though it was my first time using the tool
+            and I had to go through the sign up process, I had a working, live
+            website in under 10 minutes.
+          </p>
+          <h5 class="pt-3">Deploying with Netlify</h5>
+          <p>Here are your Netlify instructions:</p>
+          <ul>
+            <li>
+              Go to
+              <a href="https://www.netlify.com/" target="_blank">netlify.com</a>
+              and sign up using your GitHub account
+            </li>
+            <li>
+              Click on the <i>New site from Git</i> button and select GitHub
+            </li>
+            <li>Select your repository</li>
+            <li>Click deploy site</li>
+          </ul>
+          <p>
+            Netlify will auto-generate a domain name for you, which you can
+            change later. The initial deployment will take a few minutes. In the
+            future, every time you make changes to your main branch in GitHub,
+            Netlify will automatically deploy in a matter of seconds.
+          </p>
+          <h5 class="pt-3">Congratulations!</h5>
+          <p>
+            If you followed along, you now have a live, functioning website for
+            the world to enjoy. If you are just a reader, hopefully you have a
+            better understanding of how I developed and deployed
+            <a href="../index.html">thomasneff.com</a>.
+          </p>
+          <p>Thanks for reading!</p>
+          <a href="../index.html#portfolio" class="btn btn-primary btn-md"
+            >Return to Portfolio</a
+          >
         </div>
       </div>
     </div>
