@@ -26,3 +26,8 @@ body .gist .gist-meta {
   border-radius: 6px;
   appearance: none;
 }
+
+/* Blue Button Styling */
+.thomas-blue-button {
+  background-color: #3d65af !important;
+}
