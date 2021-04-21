@@ -62,9 +62,7 @@
           </p>
 
           <ol>
-            <li>
-              Setting up - Visual Studio Code, GitHub, npm, Git, Bootstrap
-            </li>
+            <li>Setting up - Visual Studio Code, GitHub, Git, Bootstrap</li>
             <li>Developing - HTML, CSS, JavaScript</li>
             <li>Deploying - Netlify</li>
           </ol>
@@ -95,25 +93,6 @@
             >
           </p>
 
-          <h5 class="pt-3">Install a package manager (npm)</h5>
-          <p>
-            Now it's time to install npm (originally Node Package Manager). In
-            an effort to keep things simple, let's just say we'll use npm to
-            download and install stuff.
-          </p>
-          <p>
-            <a href="https://www.npmjs.com/get-npm" target="_blank"
-              >https://www.npmjs.com/get-npm</a
-            >
-          </p>
-          <p>
-            If you want to understand npm a little better, check out this
-            <a
-              href="https://stackoverflow.com/questions/31930370/what-is-npm-and-why-do-i-need-it"
-              target="_blank"
-              >stack overflow post</a
-            >.
-          </p>
           <h5 class="pt-3">Install a version control tool (Git)</h5>
           <p>
             Next, install Git. Git will help us with version control, making it
@@ -186,31 +165,7 @@
             You will be prompted to save the repository somewhere on your PC.
           </p>
           <h5 class="pt-3">Install a responsive framework (Bootstrap)</h5>
-          <p>
-            Bootstrap is a front-end framework that helps to make your website
-            responsive, ensuring your site will look great on various screen
-            sizes. There are lots of ways to install Bootstrap, but let's take
-            advantage of our shiny new package manager, npm.
-          </p>
-          <p>
-            Within Visual Studio Code, make sure you are in the folder where you
-            cloned your repository. Open the terminal using
-            <code> Ctrl+Shift+`</code>
-            or by clicking terminal > New Terminal in the top menu bar.
-          </p>
-          <p>
-            Within the terminal, verify npm installed correctly by writing the
-            command <code>npm -v</code>. You should get back a version number.
-          </p>
-          <p>
-            Now install Bootstrap using the command
-            <code>npm install bootstrap --save</code>.
-          </p>
-          <p>
-            For Bootstrap to work correctly, you will also need the JavaScript
-            library, jQuery. Install jQuery using the command
-            <code>npm install jquery --save</code>.
-          </p>
+          <p>TBD - CDN</p>
           <h5 class="pt-3">Summary</h5>
           <p>
             Our development environment is now set up! Here's a quick summary of
@@ -218,11 +173,10 @@
           </p>
           <ul>
             <li>Downloaded Visual Studio Code to edit our code</li>
-            <li>Installed npm to manage packages</li>
             <li>Installed Git to help with version control</li>
             <li>Created a code repository in GitHub</li>
             <li>Cloned the code repository to our local machine</li>
-            <li>Installed Bootstrap to make our site responsive</li>
+            <li>Added the BootstrapCDN to make our site responsive</li>
           </ul>
 
           <!-- Developing -->
@@ -260,8 +214,9 @@
               src="../assets/Extensions.png"
             />
             on the left-hand menu bar in Visual Studio Code to view extensions.
-            Search for Live Server and click install. After it's done
-            installing, restart Visual Studio Code.
+            Search for Live Server, verify the extension is made by "Ritwick
+            Dey" (it should be the first result) and click install. After it's
+            done installing, restart Visual Studio Code.
           </p>
           <p>
             Open index.html within Visual Studio Code, and click on the button:
@@ -278,7 +233,90 @@
             src="../assets/first-bootstrap-website.webp"
           />
           <h5 class="pt-3">Understand the Bootstrap grid</h5>
-          <p>TBD</p>
+          <p>
+            Bootstrap uses a grid system to make your site responsive on any
+            screen size. Each row is divided into 12 units.
+          </p>
+          <p class="pt-3">
+            Below is an example of a row with three equal width columns.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-4 bg-primary pt-3">
+              <p>
+                First of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+            <div class="col-4 bg-dark pt-3">
+              <p>
+                Second of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+            <div class="col-4 bg-secondary pt-3">
+              <p>
+                Third of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/d3c84687cb65338ef60daaaacd2bf836.js"></script>
+          <p class="pt-3">
+            Below is an example of a row with three columns of variable width.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-3 bg-primary pt-3">
+              <p>
+                Column with a width of 3 units <br />
+                [col-3]
+              </p>
+            </div>
+            <div class="col-6 bg-dark pt-3">
+              <p>Column with a width of 6 units <br />[col-6]</p>
+            </div>
+            <div class="col-3 bg-secondary pt-3">
+              <p>Column with a width of 3 units <br />[col-3]</p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/0abfeed37ddbfa7d8dfc9691969b643f.js"></script>
+          <p class="pt-3">
+            Below is an example of a row with three columns with medium
+            breakpoints. Try viewing this on your mobile, or using your
+            browser's "inspect" tool to see the mobile view. You will see that
+            the columns are stacked on top of each other.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-md-4 bg-primary pt-3">
+              <p>
+                First of three equal width columns with medium breakpoint <br />
+                [col-md-4]
+              </p>
+            </div>
+            <div class="col-md-4 bg-dark pt-3">
+              <p>
+                Second of three equal width columns with medium breakpoint
+                <br />
+                [col-md-4]
+              </p>
+            </div>
+            <div class="col-md-4 bg-secondary pt-3">
+              <p>
+                Third of three equal width columns with medium breakpoint <br />
+                [col-md-4]
+              </p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/2b66609b1a0353aba525a2c12b86f05b.js"></script>
+          <p>
+            This was a VERY brief overview, so make sure you check out the
+            Bootstrap documentation at
+            <a
+              href="https://getbootstrap.com/docs/4.0/layout/grid/"
+              target="_blank"
+              >https://getbootstrap.com/docs/4.0/layout/grid/</a
+            >
+            for more details on implementation.
+          </p>
           <h5 class="pt-3">Add in styling with CSS</h5>
           <p>TBD</p>
           <h5 class="pt-3">Push your code to GitHub</h5>
