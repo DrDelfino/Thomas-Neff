@@ -1,0 +1,33 @@
+/* Blog Post CSS */
+
+/* Transform Code Snippets (gist) to dark theme and hide github message */
+@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css");
+
+body .gist .gist-meta {
+  display: none;
+}
+
+/* Github Button Clone */
+.btn-github {
+  color: #fff;
+  background-color: #238636;
+  border-color: #2ea043;
+  position: relative;
+  display: inline-block;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+}
+
+/* Blue Button Styling */
+.thomas-blue-button {
+  background-color: #3d65af !important;
+}

@@ -1,10 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Developing and Deploying a Static Website with Netlify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>How to make a static website with Bootstrap and Netlify</title>
+
+    <!-- Favicon.ico (Browser Tab Icon) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/site.webmanifest" />
+
+    <!-- Blog Post CSS -->
+    <link href="../css/blog-posts.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Buttons CSS -->
+    <link href="../css/buttons.css" rel="stylesheet" />
+
+    <!-- Font Awesome icons -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <h1>Developing and Deploying a Static Website with Netlify</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 pb-3">
+          <h1 class="pt-lg-5 pt-3 pb-3">
+            How to make a static website with Bootstrap and Netlify
+          </h1>
+
+          <h4 class="pb-3">
+            Technology Stack: HTML, CSS, JavaScript, Bootstrap, Netlify
+          </h4>
+          <h4 class="pb-3">Date Pending</h4>
+
+          <p>
+            In this post, I'll show you how to develop and deploy a simple
+            website in three steps.
+          </p>
+
+          <ol>
+            <li>Setting up - Visual Studio Code, Git, GitHub</li>
+            <li>Developing - HTML, CSS, JavaScript, Bootstrap</li>
+            <li>Deploying - Netlify</li>
+          </ol>
+          <p>
+            We'll use my website,
+            <a href="https://thomasneff.com/" target="_blank"
+              >thomasneff.com,</a
+            >
+            as an example along the way.
+          </p>
+          <p>
+            <i>Please note that these steps are written for Windows users.</i>
+          </p>
+
+          <!-- Setting Up -->
+          <h2 class="pt-5 pb-3">Setting up</h2>
+          <p>
+            If you're a seasoned developer, you can probably skip most of this
+            section. But if your new to development, let's get you set up.
+          </p>
+          <h5 class="pt-3">Download an IDE (Visual Studio Code)</h5>
+          <p>
+            First, you will want to open (or download) an Integrated Development
+            Environment (IDE). This is a fancy name for the software that will
+            let you edit your code. Many developers use Visual Studio Code, and
+            it's my tool of choice as well.
+          </p>
+          <p>
+            <a href="https://code.visualstudio.com/" target="_blank"
+              >https://code.visualstudio.com/</a
+            >
+          </p>
+
+          <h5 class="pt-3">Install a version control tool (Git)</h5>
+          <p>
+            Next, install Git. Git will help us with version control, making it
+            easy to push and pull changes from our command line.
+          </p>
+          <p>
+            <a href="https://git-scm.com/downloads" target="_blank"
+              >https://git-scm.com/downloads</a
+            >
+          </p>
+          <h5 class="pt-3">Create a code repository (GitHub)</h5>
+          <p>
+            Once you have everything installed, it's time to set up a code
+            repository. For this example, we'll be using GitHub. Navigate to
+            their website and set up an account, if you don't already have one.
+            Then, follow the on-screen instructions to create a new repository.
+          </p>
+          <p>
+            <a href="https://github.com/" target="_blank"
+              >https://github.com/</a
+            >
+          </p>
+          <p>
+            You can look at
+            <a
+              href="https://github.com/Thomas-Neff/Thomas-Neff-Personal-Website"
+              target="_blank"
+              >my repository</a
+            >
+            for this website as an example.
+          </p>
+          <h5 class="pt-3">Clone your repository</h5>
+          <p>
+            We want to make changes to the code in our online repository
+            (GitHub) using our local machine's IDE (Visual Studio Code). To do
+            that, we need to clone the repository to our local machine.
+          </p>
+          <p>
+            Navigate to your repository in GitHub. Here is
+            <a
+              href="https://github.com/Thomas-Neff/Thomas-Neff-Personal-Website"
+              target="_blank"
+              >my repository
+            </a>
+            for this website again as an example. Click on the green button that
+            says "Code". It should look similar to the button below.
+          </p>
+          <button class="btn-github btn-lg mx-auto d-block" href="#">
+            <i class="fas fa-download"></i> Code
+            <i class="fas fa-sort-down pb-1"></i>
+          </button>
+          <p class="pt-3">
+            Copy the HTTPS link that appears. It should look similar to the
+            screenshot below, but with your repository information.
+          </p>
+          <img
+            class="img-fluid w-50 pb-3 mx-auto d-block"
+            src="../assets/GitHub-clone.webp"
+          />
+          <p>
+            Open Visual Studio Code. You should be greeted with a welcome screen
+            that has a link to clone a repository.
+          </p>
+          <img
+            class="img-fluid w-50 pb-3 mx-auto d-block"
+            src="../assets/VSCode-welcome.webp"
+          />
+          <p>
+            Click on <i>clone repository...</i> and paste the link from GitHub.
+            You will be prompted to save the repository somewhere on your PC.
+          </p>
+
+          <h5 class="pt-3">Summary</h5>
+          <p>
+            Our development environment is now set up! Here's a quick summary of
+            everything we did:
+          </p>
+          <ul>
+            <li>Downloaded Visual Studio Code to edit our code</li>
+            <li>Installed Git to help with version control</li>
+            <li>Created a code repository in GitHub</li>
+            <li>Cloned the code repository to our local machine</li>
+          </ul>
+
+          <!-- Developing -->
+          <h2 class="pt-5 pb-3">Developing</h2>
+          <p>
+            We made it to the fun part! Time to start developing our website.
+          </p>
+          <h5 class="pt-3">Create a homepage</h5>
+          <p>
+            Within Visual Studio Code, make sure you are in the folder where you
+            cloned your repository. In the file explorer on the left-hand side,
+            click on the symbol:
+            <img
+              class="img"
+              style="height: 30px"
+              src="../assets/Add-file.png"
+            />
+            to add a file and name it index.html. This will be the homepage for
+            your website. Copy and paste the following code into your index.html
+            and hit save.
+          </p>
+          <p>
+            I included some additional comments to help explain the HTML for
+            beginners.
+          </p>
+
+          <script src="https://gist.github.com/Thomas-Neff/26e2628115f648c1efaf2d634be79819.js"></script>
+          <p>
+            Note that I included Bootstrap, which is a responsive framework that
+            will make our website beautiful on mobile phones as well as desktop
+            browsers. I also included popper.js and jQuery JavaScript libraries,
+            which are both necessary for Bootstrap to function correctly (though
+            Bootstrap 5 has removed jQuery as a requirement).
+          </p>
+          <h5 class="pt-3">Render and view your homepage</h5>
+          <p>
+            In order to view your code in a browser, we will add an extension
+            called Live Server. Click on the symbol:
+            <img
+              class="img"
+              style="height: 30px"
+              src="../assets/Extensions.png"
+            />
+            on the left-hand menu bar in Visual Studio Code to view extensions.
+            Search for Live Server, verify the extension is made by "Ritwick
+            Dey" (it should be the first result) and click install. After it's
+            done installing, restart Visual Studio Code.
+          </p>
+          <p>
+            Open index.html within Visual Studio Code, and click on the button:
+            <img class="img" style="height: 18px" src="../assets/Go-Live.png" />
+            in the bottom right-hand tool bar. Your browser will open and you
+            should see a rendering of your local code.
+          </p>
+          <img
+            class="img-fluid pb-3"
+            src="../assets/first-bootstrap-website.webp"
+          />
+          <h5 class="pt-3">Understand the Bootstrap grid</h5>
+          <p>
+            Bootstrap uses a grid system to make your site responsive on any
+            screen size. Each row is divided into 12 units.
+          </p>
+          <p class="pt-3">
+            Below is an example of a row with three <b>equal width</b> columns.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-4 bg-primary pt-3">
+              <p>
+                First of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+            <div class="col-4 bg-dark pt-3">
+              <p>
+                Second of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+            <div class="col-4 bg-secondary pt-3">
+              <p>
+                Third of three equal width columns <br />
+                [col-4]
+              </p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/d3c84687cb65338ef60daaaacd2bf836.js"></script>
+          <p class="pt-3">
+            Below is an example of a row with three columns of
+            <b>variable width</b>.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-3 bg-primary pt-3">
+              <p>
+                Column with a width of 3 units <br />
+                [col-3]
+              </p>
+            </div>
+            <div class="col-6 bg-dark pt-3">
+              <p>Column with a width of 6 units <br />[col-6]</p>
+            </div>
+            <div class="col-3 bg-secondary pt-3">
+              <p>Column with a width of 3 units <br />[col-3]</p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/0abfeed37ddbfa7d8dfc9691969b643f.js"></script>
+          <p class="pt-3">
+            Below is an example of a row with three columns with
+            <b>medium breakpoints</b>. Try viewing this on your mobile, or using
+            your browser's "inspect" tool to see the mobile view. You will see
+            that the columns are stacked on top of each other.
+          </p>
+          <div class="row text-white text-center pb-3">
+            <div class="col-md-4 bg-primary pt-3">
+              <p>
+                First of three equal width columns with medium breakpoint <br />
+                [col-md-4]
+              </p>
+            </div>
+            <div class="col-md-4 bg-dark pt-3">
+              <p>
+                Second of three equal width columns with medium breakpoint
+                <br />
+                [col-md-4]
+              </p>
+            </div>
+            <div class="col-md-4 bg-secondary pt-3">
+              <p>
+                Third of three equal width columns with medium breakpoint <br />
+                [col-md-4]
+              </p>
+            </div>
+          </div>
+          <script src="https://gist.github.com/Thomas-Neff/2b66609b1a0353aba525a2c12b86f05b.js"></script>
+          <p>
+            This was a VERY brief overview, so make sure you check out the
+            Bootstrap documentation at
+            <a
+              href="https://getbootstrap.com/docs/4.0/layout/grid/"
+              target="_blank"
+              >https://getbootstrap.com/docs/4.0/layout/grid/</a
+            >
+            for more details on implementation.
+          </p>
+          <h5 class="pt-3">Add in styling with CSS</h5>
+          <p>TBD</p>
+          <h5 class="pt-3">Push your code to GitHub</h5>
+          <p>TBD</p>
+          <p>
+            Note on branches - if you are working with other developers, you
+            should
+            <a
+              href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+              target="_blank"
+              >learn about branches</a
+            >. It is not a best practice to work out of the main branch (which
+            is where we're working); however - it's your site, and you can do
+            what you want. I work out of the main branch on my own website,
+            because I'm the only one here and I am living on the edge.
+          </p>
+          <h5 class="pt-3">Downloading the template for thomasneff.com</h5>
+          <p>
+            <i
+              >I am now going to deviate from the straight-forward instructional
+              nature of this post to show you how I built my personal website.
+              You're welcome to continue following along, but I recommend
+              writing about yourself instead of using my information.
+              <i class="fas fa-smile-wink"></i
+            ></i>
+          </p>
+          <p>TBD</p>
+          <h5 class="pt-3">
+            Customizing the content for thomasneff.com (HTML)
+          </h5>
+          <p>
+            TBD - custom resume content, adding in the portfolio and blog for
+            thomasneff.com
+          </p>
+          <h5 class="pt-3">Customizing the styling for thomasneff.com (CSS)</h5>
+          <p>TBD</p>
+          <h5 class="pt-3">
+            Customizing the scripting for thomasneff.com (JavaScript)
+          </h5>
+          <p>TBD</p>
+          <h5 class="pt-3">Summary</h5>
+          <p>
+            We now have the beginnings of a beautiful website. Here is a summary
+            of everything we did:
+          </p>
+          <ul>
+            <li>TBD</li>
+            <li>Added the BootstrapCDN to make our site responsive</li>
+          </ul>
+
+          <!-- Deploying -->
+          <h2 class="pt-5 pb-3">Deploying</h2>
+          <p>
+            It's time to make our website available to the masses. There are
+            lots of ways to deploy a static website, but I'm going to recommend
+            one that my friend Matt Rodgers from
+            <a href="https://matthewdavidrodgers.com/" target="_blank"
+              >matthewdavidrodgers.com</a
+            >
+            turned me on to: Netlify.
+          </p>
+          <h5 class="pt-3">Deploying with Netlify - an anecdote</h5>
+          <p>
+            Netlify is so easy that when I had a time sensitive emergency to
+            deploy a
+            <a href="../pickle.html">crude JavaScript pickle mass calculator</a
+            >. I turned to Netlify. Even though it was my first time using the
+            tool and I had to go through the sign up process, I had a working,
+            live pickle mass calculator deployed in under 10 minutes.
+          </p>
+          <h5 class="pt-3">Deploying with Netlify</h5>
+          <p>Here are your Netlify instructions:</p>
+          <ul>
+            <li>
+              Go to
+              <a href="https://www.netlify.com/" target="_blank">netlify.com</a>
+              and sign up using your GitHub account
+            </li>
+            <li>
+              Click on the <i>New site from Git</i> button and select GitHub
+            </li>
+            <li>Select your repository</li>
+            <li>Click deploy site</li>
+          </ul>
+          <p>
+            Netlify will auto-generate a domain name for you, which you can
+            change later. The initial deployment will take a few minutes. In the
+            future, every time you make changes to your main branch in GitHub,
+            Netlify will automatically deploy in a matter of seconds.
+          </p>
+          <h5 class="pt-3">Congratulations!</h5>
+          <p>
+            If you followed along, you now have a live, functioning website for
+            the world to enjoy. If you are just a reader, hopefully you have a
+            better understanding of how I developed and deployed
+            <a href="../index.html">thomasneff.com</a>.
+          </p>
+          <p>Thanks for reading!</p>
+          <a
+            href="../index.html#blog"
+            class="btn thomas-blue-button victoria-one"
+            >Return to Blog</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>

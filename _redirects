@@ -1,0 +1,11 @@
+# for root
+/*              /index.html
+​
+# for the rest
+/cloud-formation/*        /cloud-formation.html    
+/facial-recognition/*      /facial-recognition.html   
+/org-complexity-management/*      /org-complexity-management.html  
+/python-data-processing/*      /python-data-processing.html   
+/rocket-league-bot/*      /rocket-league-bot.html 
+/static-website/*      /static-website.html
+/simple-serverless-application/*      /simple-serverless-application.html

@@ -37,7 +37,7 @@
   });
 
   // Update hash in URL on nav bar click
-  jQuery("a").click(function (e) {
+  jQuery("a").on("click", function (e) {
     window.location.hash = this.hash;
   });
 })(jQuery); // End of use strict
